@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/mixitup.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/style-colleen.css">
+    <link rel="icon" type="image/icon" href="images/logo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+
+    <title>Summer Travels</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">My Story</a></li>
+            <li><a href = "travel.html" class = "current">Summer Travels</a></li>
+            <li><a href = "involvement.html">Campus Involvement</a></li>
+            <li><a href = "resume.html">Resume</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<h1>My Past Summer Travels</h1>
+<p>
+This past summer, I spent six weeks interning in Bangalore, India. Click through the pictures to learn more about the cities I visited. If you ever get the chance to visit India, I highly recommend you visiting these places!
+</p>
+
+
+
+    <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".Bangalore">Bangalore</button>
+            <button type="button" class="control" data-filter=".Goa">Goa</button>
+            <button type="button" class="control" data-filter=".Hampi">Hampi</button>
+            <button type="button" class="control" data-filter="none">None</button>
+    </div>
+
+
+    <div class = "gallery container">
+
+      <!--   Bangalore -->
+        <a href="images/nandi.jpg" data-lightbox="bangalore" data-title="This is the amazing view from the top of Nandi Hills in Bangalore. It a great sight to see for those into hiking or exploring in nature. It's a good hike for beginners." class = "mix Bangalore"><img src="images/nandi.jpg" alt = "Nandi Hill in India"></a>
+
+        <a href="images/temple.jpg" data-lightbox="bangalore" data-title="This is the  ISKON (The International Society for Krishna Consciousness)temple in Bangalore It is one of the largest in the world and was inaugurated in 1997." class = "mix Bangalore"><img src="images/temple.jpg" alt = "The ISKON temple in India"></a>
+
+        <a href="images/park.jpg" data-lightbox="bangalore" data-title="The Lalbaugh Botanical Garden is one of the most well known botanical gardens in Bangalore, India. It's famous glass house dates back to 1889. It hosts many flower shows throughout the year. " class = "mix Bangalore"><img src="images/park.jpg" alt = "Lalbaugh Park in India"></a>
+        
+
+      <!--   Goa -->
+
+       <a href="images/beach.jpg" data-lightbox="goa" data-title="Arambol Beach attracts many international tourists, mainly during the winter season between November and March. This is due to its distinct bohemian feel." class = "mix Goa"><img src="images/beach.jpg" alt = "A beach in Goa, India"></a>
+
+
+
+       <a href="images/paragliding.jpg" data-lightbox="goa" data-title="A common excursion for tourists is going paragliding. Flying across the sea and looking out into the moutains is a must-see sight!" class = "mix Goa"><img src="images/paragliding.jpg" alt = "A person paragliding through the sky."></a>
+
+
+
+       <a href="images/cathedral.jpg" data-lightbox="goa" data-title="Portugal colonised Goa in 1510, bringing Christianity and European culture with it. They maintained power until 1961. The Portuguese's influence is apparent in the city's architecture. Mnay of the cathedrals and homes have Portuguese elements like dome-shaped windows, tilted roofs, and inner courtyards." class = "mix Goa"><img src="images/cathedral.jpg" alt = "A cathedral in India"></a>
+
+
+        <!-- Hampi -->
+        <a href="images/chamber.JPG" data-lightbox="hampi" data-title="This is the Elephant Stable, which was used to provide shelter for the royal elephants of the Vijayanagara Empire. Each chamber is large enough to house two elephants at the same time. It is one of the few structures that uses an Indo-Islamic style of architecture." class = "mix Hampi"><img src="images/chamber.JPG" alt = "A 7 door chamber for elephants"></a>
+
+        <a href="images/tank.jpg" data-lightbox="hampi" data-title="This is the Stepped Tank, a structure used for religious ceremonies by the royals. The attention to detail needed to make such a symmetrical and beautiful structure is astounding." class = "mix Hampi"><img src="images/tank.jpg" alt = "An ancient water system"></a>
+
+        <a href="images/chariot.jpg" data-lightbox="hampi" data-title="This is a chariot carving that is a shrine dedicated to Garuda, built inside the Vittala Temple Complex. The chariot was built by King Krishnadevaraya of the Vijayanagara Empire during the 16th century, who got fascinated with the Konark Sun temple chariot while fighting a battle in Odissa. The chariot is meant to represent the beauty and artistic perfection of the Empire." class = "mix Hampi"><img src="images/chariot.jpeg" alt = "A stone chariot shrine"></a>
+    </div>
+
+<script src="js/lightbox.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script>
+        var containerEl = document.querySelector('.container');
+        var mixer = mixitup(containerEl);
+</script>
+
+<footer>
+    <ol>
+        <li class = "footer"><a href="https://www.facebook.com/cindy505" aria-label ="Facebook's Logo"><i class="fab fa-facebook-f"></i></a></li>
+
+        <li class = "footer"><a href="https://www.linkedin.com/in/cindy-huang-760573157/" aria-label ="LinkedIn's Logo"><i class="fab fa-linkedin" ></i></a></li>
+
+        <li class = "footer"><a href="https://www.instagram.com/cin.05/?hl=en" aria-label ="Instagram's Logo"><i class="fab fa-instagram"></i></a></li>
+    </ol>
+
+</footer>
+</body>
+
+
+</html>

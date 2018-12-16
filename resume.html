@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" type="image/ico" href="images/logo.png" />
+    <title >Resume</title>
+
+    <style>
+    p{
+        display: none;
+    }
+
+    .errormsg { 
+        color:red;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: medium;
+        display:block }
+
+    </style>
+
+
+</head>
+
+<body>
+	<header>
+    <nav>
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">My Story</a></li>
+            <li><a href = "travel.html">Summer Travels</a></li>
+            <li><a href = "involvement.html">Campus Involvement</a></li>
+            <li><a href = "resume.html" class = "current">Resume</a></li>
+
+        </ul>
+    </nav>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</header>
+
+    <h1>My Resume</h1>
+    <embed src="docs/resume.pdf" type="application/pdf" />
+
+    <h2>Have a question? Contact me here!</h2>
+
+<h4>Click "show" to see my email address</h4>
+<script>
+$(document).ready(function(){
+  
+  $("#show").click(function(){
+    $("p").show();
+  });
+
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+
+
+});
+</script>
+
+<p>Email Address: cinhuang@umich.edu</p>
+<button id="show">Show</button>
+<button id="hide">Hide</button>
+
+
+<form class="form" method="POST" action="https://formspree.io/cinhuang@umich.edu">
+    <fieldset>
+        <legend>I'd love to hear from you</legend>
+          <label for="fullname">Full name: </label>
+            <input type="text" name="fullname" id="fullname">
+            <p id="nameerrormsg">Please enter your name above!</p>
+
+            
+            <label for="email">Email Address: </label>
+            <input type="text" name="email" id="email">
+            <p id="emailerrormsg">Please enter your email!</p>
+
+
+          <label for ="message"></label>
+            Message:
+          <input type="text" name="message" id="message">
+          <p id="messageerrormsg">Please enter your message!</p>
+
+
+        </fieldset>
+        <input type="submit" value="Send Message!"> 
+    </form>
+
+
+<script>
+    $("form").submit(function() {
+        var valid = true;
+
+        $("form input[type=text]").each(function() {
+            if(!(this.value)) {
+                valid = false;
+                $(this).next('p').addClass('errormsg')
+            }
+
+            else{
+                $(this).next('p').removeClass('errormsg')
+
+            }
+
+        });
+
+        if (valid == false) {
+            event.preventDefault();
+            return false;
+        }
+
+    })
+    
+</script>
+
+<footer>
+    <ol>
+        <li class = "footer"><a href="https://www.facebook.com/cindy505" aria-label ="Facebook's Logo"><i class="fab fa-facebook-f"></i></a></li>
+
+        <li class = "footer"><a href="https://www.linkedin.com/in/cindy-huang-760573157/" aria-label ="LinkedIn's Logo"><i class="fab fa-linkedin" ></i></a></li>
+
+        <li class = "footer"><a href="https://www.instagram.com/cin.05/?hl=en" aria-label ="Instagram's Logo"><i class="fab fa-instagram"></i></a></li>
+
+    </ol>
+
+</footer>
+
+
+</body>
+</html>
